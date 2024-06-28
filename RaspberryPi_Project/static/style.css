@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* 신분증 저장 버튼 스타일 */
+form:first-of-type button {
+    background-color: #008CBA; /* Blue */
+}
+
+/* 신분증 비교 버튼 스타일 */
+form:last-of-type button {
+    background-color: #f44336; /* Red */
+}
+
+.streaming-video {
+    width: 640px; /* 영상의 너비 */
+    height: 480px; /* 영상의 높이 */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 2; /* 다른 요소들 위에 올라오도록 설정 */
+}
+
+.container {
+    position: relative; /* 전체 화면 비디오에 대한 컨테이너 설정 */
+    height: 100%;
+}
+
+.input-section {
+    position: absolute; /* 절대 위치 설정 */
+    top: 20px; /* 상단에서 20px 떨어진 곳에 배치 */
+    left: 20px; /* 왼쪽에서 20px 떨어진 곳에 배치 */
+    z-index: 1; /* 신분증 입력 섹션이 다른 요소들 위에 오도록 설정 */
+}

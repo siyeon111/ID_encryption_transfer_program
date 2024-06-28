@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin: 0;
+}
+
+.streaming-video {
+    max-width: 80%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.input-group {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text-input {
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.submit-btn, .compare-btn { /* 공통 스타일을 적용하기 위해 선택자를 합쳤습니다. */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.compare-btn { /* 비교 버튼의 스타일을 별도로 정의합니다. */
+    margin-top: 30px; /* 위치를 내리고 싶은 만큼 마진을 증가시킵니다. */
+    padding: 15px 30px; /* 버튼의 크기를 키우기 위해 패딩을 증가시킵니다. */
+    font-size: 20px; /* 글꼴 크기를 증가시켜 버튼의 전반적인 크기를 키웁니다. */
+}
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.main-menu-button {
+    position: fixed; /* 요소를 화면에 고정 */
+    bottom: 0; /* 화면의 하단에 위치 */
+    left: 0; /* 왼쪽 경계에서 시작 */
+    right: 0; /* 오른쪽 경계까지 */
+    width: fit-content; /* 버튼의 내용에 맞게 너비 조정 */
+    margin: 0 auto; /* 좌우 마진을 자동으로 설정하여 가운데 정렬 */
+    padding: 10px; /* 버튼 주변의 여백 */
+    background-color: #4CAF50; /* 배경색 설정 */
+    color: white; /* 글자색 설정 */
+}

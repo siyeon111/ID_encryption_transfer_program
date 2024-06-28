@@ -1,0 +1,62 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    width: 320px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* box-sizing 추가 */
+}
+
+.form-action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-action button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form-action button:last-child {
+    margin-right: 0;
+}
+
+/* 페이지 상단의 "PASS" 텍스트 스타일 */
+.pass-header {
+    margin-bottom: 50px; /* 폼과의 간격 설정 */
+    font-size: 24px; /* 폰트 크기 설정 */
+    font-weight: bold; /* 폰트 굵기 설정 */
+}
+

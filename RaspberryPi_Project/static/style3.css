@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 영상을 수직 방향 가운데 정렬 */
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px; /* 폼 위쪽 마진 추가 */
+    width: 100%;
+    max-width: 400px; /* 폼 최대 너비 지정 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    margin-top: 20px; /* 버튼 컨테이너 위쪽 마진 추가 */
+    width: 100%;
+    max-width: 400px; /* 버튼 컨테이너 최대 너비 지정 */
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="text"] {
+    width: 100%; /* 입력란의 너비를 100%로 설정하여 부모 요소의 너비에 맞게 확장됩니다. */
+    height: 40px; /* 원하는 높이로 설정하세요. */
+    padding: 10px; /* 입력란의 안쪽 여백을 추가하여 텍스트가 안정적으로 보이도록 합니다. */
+    box-sizing: border-box; /* padding과 border를 포함하여 요소의 크기를 계산하도록 설정합니다. */
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* 신분증 저장 버튼 스타일 */
+form:first-of-type button {
+    background-color: #008CBA; /* Blue */
+}
+
+.streaming-video {
+    width: 640px; /* 영상의 너비 */
+    height: 480px; /* 영상의 높이 */
+}

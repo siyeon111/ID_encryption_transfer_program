@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "e-charger-416501",
+  "private_key_id": "107a978c74253b3d83723792a16f3194b57674e6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCfhCsuOQ8wVUqY\nhsMzhxzQtTXgT/ookgaXA/B0sAfyHqSLmJ0G8mfDJYB6AXN0WMMzafxQ+Ie6ivhJ\n9kLg4AWWGiKfPmlBwMuNAtImuodQiWJQrJi8OV/N+Z7lyGH3ORSx4DSR4pLqj8NJ\nX/SvEylv4vFfwIhOg2Klvk3dJ6LxotJRdf0cNECxs22x2DcL18JgzyrqitDhBiYc\nnXi+9HIrtjQNczjeN4wRycJd+n+9tLmt1FIbiffojodHXF+DySUJMhOCiuhk9Scs\ndMJR9r6Bj3GJwFPGMQz0UWvncgz62JSMEBzBoPrH4NCG7BFCLxazoSwhMLO3aHfT\nhwhTl1OxAgMBAAECggEAF37zEk2mylaB1JojBgO8j5RlgWseXJv3uwZCRJnKLdRs\nJcC+vm91r7WmKTJuBGDvrbLKjs2wxl4iaNiMbM2qnPuwBlc9z0jb4qMb+8blWAxI\nbjwiCjWEQlVmnY+IuI7QmMu+yo8+Vy0CVZw78Q7IP3oE1jcIjNIG9YVkuDLWqjM3\nDG8hFAvkn0wjFv0FEHJUbXzFWMVfaEHAk1EmKH8HbelyVEDTzyaODsNJ6kLIbuDD\nQMeRrBYtzDHywKCu1TSpfjilzIkI8aHXBsi6knNpJkKi4Xj4MWxO1CRyIgtEfJnC\nKLA7/OOo02n4v/SuREmP/FSiFAbL00hLqjBWtBYFrQKBgQDYwp969umsVgeAdzwr\nUByro5t0Z0Zur8tkNSEGQ0133XnJJIWqPv/56YHkpiDGsurcV5KENmoRRUaCKHjm\nN9iX7bB2tV05fR+vMUMjU2jQ26qTkD7mC0bC75iHrjZNtCDBbaaWbyw9pDpdooz4\n9nPH7+VJRnzuJdpUd9RP8/3B5QKBgQC8ZKx5e3zABHtMpk8qChlUVeqR2uAU81yd\nNmwa7MDUZb+3WpYvzvZoJgfX17+OXi5FVRGBvW3D9BzybdGzO0kWj7svmjE+eLIz\nOCYfPPtfNPdT3U5VlI37KfEZWxTlK2jgLKmk8uwICQKRGYuHd3k9fWu4TKdMWHZH\nTk4/P1Ad3QKBgQCYFGzKXER0imN3CbEofmuvLPnbwL3U2Pgt1WzXNQ88QyK4Miyp\n1svH7sIYx0oFvvAzKin9IyRl+6HNnlG8zH/lkHmXwAWpWRWK2FhPh6zppMVYBQNs\naYr7KBlvUJZ/DBtTOvh/YX67vObKXUrlPhzbsX/AWnk6qUo2q2BFvF1U1QKBgDzz\nSUXIaPTqvkVvLP+J4uYBIfHsYUEF9zm5yMHxRPWysZMNkLeI+vl5DGKNn6Dc4ZV2\nz0ItWhzilpbsZsLY9G2DNOlStoninKyrhtHmdeE4jqgoWlafyEuxJxqv+BOotraI\nXJ5MJYb3+0ecfyLlyWjWcgpfamTt3d51/CTERBRVAoGBANBxeUHc6PTThKSLlKI1\n995wOx0jcNkpMt4EEllgAK6C4zYBe9DUCy72cpbZdwuhmo+zMexcLbDiaNYy602/\nuZHy3fv28xZRYm4hYfc6RBNPbS6ewVN1djDjJ3hUQoKEkmIMScQyYNP9PC9MRRHb\nHS9orGi1laGPqEWDtGYWe7ld\n-----END PRIVATE KEY-----\n",
+  "client_email": "pangwook-449@e-charger-416501.iam.gserviceaccount.com",
+  "client_id": "112565864716136503559",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pangwook-449%40e-charger-416501.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

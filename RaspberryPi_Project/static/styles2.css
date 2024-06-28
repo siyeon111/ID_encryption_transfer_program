@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 화면 높이 전체를 사용 */
+    background-color: #f0f0f0;
+}
+
+/* 맨 위에 PASS를 띄우기 위한 스타일 */
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* 폼과 그 내용을 가운데로 정렬하기 위한 스타일 */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 버튼 디자인 */
+button {
+    background-color: #4CAF50; /* 녹색 */
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* 폼 내의 각 항목을 가로로 정렬하기 위한 컨테이너 */
+.form-container div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* 각 입력 필드 사이의 간격 */
+}
+
+/* 레이블의 너비를 일정하게 설정 */
+.form-container label {
+    width: 80px; /* 레이블의 너비를 조정해 필요한 만큼 공간을 확보하세요 */
+    margin-right: 10px; /* 레이블과 입력 필드 사이의 간격 */
+}
+
+/* 입력 필드 스타일 조정 */
+.form-container input, .form-container button {
+    flex-grow: 1; /* 남은 공간을 입력 필드와 버튼이 차지하도록 설정 */
+}
+
+/* 중복 확인 버튼을 위한 추가 스타일 */
+.form-container button[type="button"] {
+    flex-grow: 0; /* '중복 확인' 버튼이 공간을 모두 차지하지 않도록 설정 */
+    margin-left: 10px; /* 버튼과 입력 필드 사이의 간격 */
+}

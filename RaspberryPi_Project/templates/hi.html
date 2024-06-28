@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>신분증 비교</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style2.css') }}">
+</head>
+<body>
+    <h1>신분증 비교 페이지</h1>
+    <img class="streaming-video" src="/video_feeds2" alt="신분증 인식 및 비교 영상">
+    <form action="/hi" method="post">
+        <div class="input-group">
+            <button type="submit" name="action" value="submit" class="submit-btn">제출</button>
+        </div>
+        <button type="submit" name="action" value="compare" class="compare-btn">비교</button>
+    </form>
+    {% if messages %}
+    {% for message in messages %}
+        <h2>{{ message }}</h2>
+    {% endfor %}
+    {% endif %}
+    <div class="main-menu-button">
+        <button onclick="window.location.href='/mainmenu'">메인 메뉴로 돌아가기</button>
+    </div>
+    <div id="result"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".submit-btn").click(function(e) {
+                e.preventDefault(); // 폼 전송을 막습니다.
+                var filename = $("#filename2").val();
+                $.ajax({
+                    url: '/hi',
+                    type: 'POST',
+                    data: {filename2: filename, action: 'submit'},
+                    success: function(response) {
+                        // 서버로부터 응답을 받으면 여기에서 처리
+                        alert("제출 완료!");
+                    },
+                    error: function(error) {
+                        // 오류 처리
+                        console.log(error);
+                    }
+                });
+            });
+        
+            $(".compare-btn").click(function(e) {
+                e.preventDefault(); // 폼 전송을 막습니다.
+
+                // 비교 요청을 보내는 AJAX
+                $.ajax({
+                    url: '/hi',
+                    type: 'POST',
+                    data: {action: 'compare'},
+                    dataType: 'json', // 이 부분이 중요합니다.
+                    success: function(response) {
+                        alert("제출 완료!");
+                        if(response.messages) {
+                            let displayText = "";
+                            response.messages.forEach(function(message) {
+                                displayText += "<p>" + message + "</p>";
+                            });
+                            $("#result").html(displayText); // 결과를 'result' 영역에 표시
+                        } else {
+                            $("#result").html("<p>메시지를 받지 못했습니다.</p>");
+                        }
+                    },
+                    error: function(error) {
+                        console.log(error);
+                        $("#result").html("<p>오류가 발생했습니다.</p>");
+                    }
+                });
+            });
+        });
+        </script>
+
+</body>
+</html>
+
+    
+
+

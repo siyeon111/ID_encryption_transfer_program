@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ID recognition program</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>ID recognition program</h1>
+    <form action="/hello" method="post">
+        <button type="submit">신분증 저장</button>
+    </form>
+    <form action="/hi" method="post">
+        <button type="submit">신분증 비교</button>
+    </form>
+    <form action="/" method="get">
+        <button type="submit">로그아웃</button>
+    </form>
+</body>
+</html>
